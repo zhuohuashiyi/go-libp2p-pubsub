@@ -35,7 +35,7 @@ func main() {
 	}
 
 	// create a new PubSub service using the GossipSub router
-	ps, err := pubsub.NewGossipSub(ctx, h, map[peer.ID]float64{}, 0.8)
+	ps, err := pubsub.NewGossipSub(ctx, h, map[peer.ID]int{}, 0.3)
 	if err != nil {
 		panic(err)
 	}
